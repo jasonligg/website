@@ -6,7 +6,8 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "13.0.2",
@@ -23,6 +24,8 @@
     "autoprefixer": "^10.4.7",
     "eslint": "^8.26.0",
     "eslint-config-next": "13.0.2",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
@@ -31,5 +34,9 @@
   },
   "ct3aMetadata": {
     "initVersion": "6.8.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
