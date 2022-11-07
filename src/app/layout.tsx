@@ -51,7 +51,7 @@ export default function RootLayout(props: Props) {
                 Tools
               </Link>
             </ul>
-            <p className="p-4 text-stone-700">
+            <p className="p-4 text-stone-700 text-xs">
               {new Date().getFullYear()} Jason Liggayu. All rights reserved.
             </p>
           </footer>
