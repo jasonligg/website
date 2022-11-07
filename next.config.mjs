@@ -14,7 +14,7 @@ const config = {
     defaultLocale: "en",
   },
   experimental: {
-    transpilePackages: ["react-daisyui"],
+    appDir: true,
   },
 };
 
