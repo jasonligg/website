@@ -6,13 +6,13 @@ import "../styles/globals.css";
 
 type Props = PropsWithChildren;
 
-const openSans = Open_Sans({ subsets: ["latin"] });
+const openSans = Open_Sans({ subsets: ["latin"], variable: "--font-open" });
 
 export default function RootLayout(props: Props) {
   const { children } = props;
 
   return (
-    <html lang="en" className={openSans.className}>
+    <html lang="en" className={openSans.variable}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
@@ -29,8 +29,8 @@ export default function RootLayout(props: Props) {
               <Link href="/work" className="p-4 hover:text-red-300">
                 Work
               </Link>
-              <Link href="/tools" className="p-4 hover:text-red-300">
-                Tools
+              <Link href="/uses" className="p-4 hover:text-red-300">
+                Uses
               </Link>
             </ul>
           </nav>
@@ -44,8 +44,8 @@ export default function RootLayout(props: Props) {
             <Link href="/work" className="p-4 hover:text-red-300">
               Work
             </Link>
-            <Link href="/tools" className="p-4 hover:text-red-300">
-              Tools
+            <Link href="/uses" className="p-4 hover:text-red-300">
+              Uses
             </Link>
           </ul>
           <p className="p-4 text-xs text-stone-700">
