@@ -1,8 +1,8 @@
 // Fisher-Yates (aka Knuth) Shuffle
 // https://stackoverflow.com/a/2450976
-export function shuffle<T>(array: T[]): T[] {
+export function shuffle(array: any) {
   let currentIndex = array.length;
-  let randomIndex: number;
+  let randomIndex = 0;
 
   while (currentIndex !== 0) {
     randomIndex = Math.floor(Math.random() * currentIndex);
