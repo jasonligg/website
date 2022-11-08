@@ -1,15 +1,18 @@
 import { type PropsWithChildren } from "react";
 import Link from "next/link";
+import { Open_Sans } from "@next/font/google";
 
 import "../styles/globals.css";
 
 type Props = PropsWithChildren;
 
+const openSans = Open_Sans({ subsets: ["latin"] });
+
 export default function RootLayout(props: Props) {
   const { children } = props;
 
   return (
-    <html>
+    <html lang="en" className={openSans.className}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
