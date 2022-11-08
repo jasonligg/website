@@ -13,6 +13,7 @@ const titles = [
 
   "react fanboy",
   "next.js fan",
+  "typescript lover",
 ];
 
 export default function HomepageHeroText() {
