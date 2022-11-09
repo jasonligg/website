@@ -49,7 +49,7 @@ export default function RootLayout(props: Props) {
             </Link>
           </ul>
           <p className="p-4 text-xs text-stone-700">
-            {new Date().getFullYear()} Jason Liggayu. All rights reserved.
+          © {new Date().getFullYear()} Jason Liggayu. All rights reserved.
           </p>
         </footer>
       </body>
