@@ -35,7 +35,9 @@ export default function RootLayout(props: Props) {
             </ul>
           </nav>
         </header>
-        {children}
+        <main className="md:px-18 px-4 sm:px-6 lg:px-44 xl:px-96">
+          {children}
+        </main>
         <footer className="mx-auto max-w-7xl flex-row justify-between border-t border-t-stone-500 py-4 md:flex lg:px-8">
           <ul className="flex flex-row justify-center space-x-6 text-sm">
             <Link href="/about" className="p-4 hover:text-red-300">
@@ -49,7 +51,7 @@ export default function RootLayout(props: Props) {
             </Link>
           </ul>
           <p className="p-4 text-xs text-stone-700">
-          © {new Date().getFullYear()} Jason Liggayu. All rights reserved.
+            © {new Date().getFullYear()} Jason Liggayu. All rights reserved.
           </p>
         </footer>
       </body>
