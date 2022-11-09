@@ -1,9 +1,17 @@
+import Image from "next/image";
 import HomepageHeroText from "@/app/HomepageHeroText";
+import avatar from "../../public/avatar.jpg";
 
 export default function App() {
   return (
     <main className="md:px-18 px-4 sm:px-6 lg:px-44 xl:px-96">
       <hgroup>
+        <Image
+          src={avatar}
+          alt="Picture of Jason Liggayu."
+          width={100}
+          className="mb-6 rounded-full"
+        />
         <h1 className="text-5xl font-bold tracking-tight lg:text-6xl">
           software engineer
           <br />
@@ -19,8 +27,10 @@ export default function App() {
         <p className="max-w-prose pt-4 text-lg tracking-wide">
           <strong>Currently,</strong> I&apos;m helping build the 100% renewable
           future and fighting the climate crisis at{" "}
-          <a href="https://www.arcadia.com/" className="text-[#0EFF85]">Arcadia</a>. I&apos;m an engineer
-          on the Growth squad.
+          <a href="https://www.arcadia.com/" className="text-[#0EFF85]">
+            Arcadia
+          </a>
+          . I&apos;m an engineer on the Growth squad.
         </p>
       </hgroup>
     </main>
