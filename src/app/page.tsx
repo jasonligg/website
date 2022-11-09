@@ -6,7 +6,7 @@ import avatar from "../../public/avatar.jpg";
 
 export default function RootPage() {
   return (
-    <section className="relative flex min-w-fit flex-col items-center justify-around lg:max-h-[768px] pb-4">
+    <section className="relative flex min-w-fit flex-col items-center justify-around pb-4 lg:max-h-[768px]">
       <hgroup>
         <Image
           src={avatar}
@@ -60,7 +60,7 @@ export default function RootPage() {
           as a curriculum developer and instructor. I also supported their
           JavaScript learning platform as an engineer and mentor.
         </p>
-        <Link href="/about" className="text-stone-500 text-sm lg:text-base">
+        <Link href="/about" className="text-sm text-stone-500 lg:text-base">
           Read more about me.
         </Link>
       </article>
