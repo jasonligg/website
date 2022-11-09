@@ -1,33 +1,34 @@
 "use client";
-import { Fragment, useState, useEffect } from "react";
-import { shuffle } from "@/utils";
+import { useState, useEffect } from "react";
 
 const titles = [
-  "software engineer",
-  "coding educator",
   "tech enthusiast",
+  "react fanatic",
+  "next.js nerd",
+  "typescript maven",
 
   "coffee drinker",
   "hip-hop head",
   "wannabe dj",
-
-  "react fanboy",
-  "next.js fan",
-  "typescript lover",
 ];
 
 export default function HomepageHeroText() {
-  const [[first, second, third], setIndices] = useState(titles);
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
     let cancel = false;
     let timeoutId: ReturnType<typeof setTimeout>;
+
     function loop() {
       if (cancel) return;
       timeoutId = setTimeout(() => {
-        setIndices((prevState) => shuffle([...prevState]));
+        setIndex((prevIndex) => {
+          if (prevIndex === titles.length - 1) return 0;
+
+          return prevIndex + 1;
+        });
         loop();
-      }, 15000);
+      }, 5000);
     }
     loop();
     return () => {
@@ -36,20 +37,12 @@ export default function HomepageHeroText() {
     };
   }, []);
 
+  const title = titles[index];
+
   return (
-    <>
-      <Fragment key={first}>
-        {first}
+      <div key={title} className="animate-swipe-in">
+        {title}
         <br />
-      </Fragment>
-      <Fragment key={second}>
-        {second}
-        <br />
-      </Fragment>
-      <Fragment key={third}>
-        {third}
-        <br />
-      </Fragment>
-    </>
+      </div>
   );
 }
