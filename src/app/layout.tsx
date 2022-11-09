@@ -44,8 +44,8 @@ export default function RootLayout(props: Props) {
             <Link href="/work" className="p-4 hover:text-red-300">
               Work
             </Link>
-            <Link href="/uses" className="p-4 hover:text-red-300">
-              Uses
+            <Link href="/gratitude" className="p-4 hover:text-red-300">
+              Gratitude
             </Link>
           </ul>
           <p className="p-4 text-xs text-stone-700">
