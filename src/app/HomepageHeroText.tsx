@@ -12,6 +12,7 @@ const titles = [
   "k-pop stan",
   "wannabe dj",
   "coffee drinker",
+  "deep thinker",
 ];
 
 export default function HomepageHeroText() {
