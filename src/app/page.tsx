@@ -3,7 +3,6 @@ import HomepageHeroText from "@/app/HomepageHeroText";
 export default function App() {
   return (
     <main className="md:px-18 px-4 sm:px-6 lg:px-44 xl:px-96">
-      {/* <div>hello world.</div> */}
       <hgroup>
         <h1 className="text-5xl font-bold tracking-tight lg:text-6xl">
           software engineer
