@@ -6,10 +6,12 @@ const titles = [
   "react fanatic",
   "next.js nerd",
   "typescript maven",
+  "tailwind convert",
 
-  "coffee drinker",
   "hip-hop head",
+  "k-pop stan",
   "wannabe dj",
+  "coffee drinker",
 ];
 
 export default function HomepageHeroText() {
