@@ -5,7 +5,7 @@ const titles = [
   "tech enthusiast",
   "react fanatic",
   "next.js nerd",
-  "typescript maven",
+  "typescript adept",
   "tailwind convert",
 
   "hip-hop head",
