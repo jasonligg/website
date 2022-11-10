@@ -29,7 +29,7 @@ export default function RootPage() {
           <a href="https://www.arcadia.com/" className="text-[#0EFF85]">
             Arcadia
           </a>{" "}
-          as a full-stack engineer on the Growth squad.
+          as a software engineer on the Growth squad.
         </p>
         <p className="max-w-prose pt-4 tracking-wide text-stone-400 lg:text-lg">
           I&apos;m also working at{" "}
