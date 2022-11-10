@@ -1,21 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
 import HomepageHeroText from "@/app/HomepageHeroText";
-import avatar from "../../public/avatar.jpg";
 // import cat from "../../public/cat.jpg";
 
 export default function RootPage() {
   return (
     <section>
       <hgroup>
-        {/* <Link href="/">
-          <Image
-            src={avatar}
-            alt="Picture of Jason Liggayu that links to homepage."
-            width={100}
-            className="my-6 rounded-full"
-          />
-        </Link> */}
         <h1 className="whitespace-nowrap text-4xl font-bold tracking-tight lg:text-5xl 2xl:text-6xl">
           software engineer
           <br />

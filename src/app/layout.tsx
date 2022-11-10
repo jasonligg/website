@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Open_Sans } from "@next/font/google";
 import Image from "next/image";
 import NavbarLink from "@/app/NavbarLink";
+import MobileMenu from "@/app/MobileMenu";
 import avatar from "../../public/avatar.jpg";
-
 import "../styles/globals.css";
 
 type Props = PropsWithChildren;
@@ -20,17 +20,17 @@ export default function RootLayout(props: Props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className="flex min-h-screen flex-col justify-between bg-stone-900 text-stone-100">
-        <header>
-          <nav className="flex flex-row justify-center border-solid border-stone-50 pt-4">
+        <header className="">
+          <nav className="flex flex-row justify-between border-solid border-stone-50 pt-4 md:justify-center">
+            <MobileMenu />
             <Link href="/">
               <Image
                 src={avatar}
                 alt="Picture of Jason Liggayu that links to homepage."
-                width={50}
-                className="mr-4 rounded-full"
+                className="mr-4 w-[85px] rounded-full md:w-[50px]"
               />
             </Link>
-            <ul className="flex flex-row space-x-6 rounded-full bg-stone-800 text-sm md:px-3">
+            <ul className="hidden flex-row space-x-6 rounded-full bg-stone-800 text-sm md:visible md:flex md:px-3">
               <NavbarLink slug="about">About</NavbarLink>
               <NavbarLink slug="articles">Articles</NavbarLink>
               <NavbarLink slug="work">Work</NavbarLink>
