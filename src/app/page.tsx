@@ -8,14 +8,14 @@ export default function RootPage() {
   return (
     <section>
       <hgroup>
-        <Link href="/">
-        <Image
-          src={avatar}
-          alt="Picture of Jason Liggayu."
-          width={100}
-          className="my-6 rounded-full"
+        {/* <Link href="/">
+          <Image
+            src={avatar}
+            alt="Picture of Jason Liggayu that links to homepage."
+            width={100}
+            className="my-6 rounded-full"
           />
-          </Link>
+        </Link> */}
         <h1 className="whitespace-nowrap text-4xl font-bold tracking-tight lg:text-5xl 2xl:text-6xl">
           software engineer
           <br />

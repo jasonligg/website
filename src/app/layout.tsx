@@ -1,6 +1,9 @@
 import { type PropsWithChildren } from "react";
 import Link from "next/link";
 import { Open_Sans } from "@next/font/google";
+import Image from "next/image";
+import NavbarLink from "@/app/NavbarLink";
+import avatar from "../../public/avatar.jpg";
 
 import "../styles/globals.css";
 
@@ -19,19 +22,19 @@ export default function RootLayout(props: Props) {
       <body className="flex min-h-screen flex-col justify-between bg-stone-900 text-stone-100">
         <header>
           <nav className="flex flex-row justify-center border-solid border-stone-50 pt-4">
+            <Link href="/">
+              <Image
+                src={avatar}
+                alt="Picture of Jason Liggayu that links to homepage."
+                width={50}
+                className="mr-4 rounded-full"
+              />
+            </Link>
             <ul className="flex flex-row space-x-6 rounded-full bg-stone-800 text-sm md:px-3">
-              <Link href="/about" className="p-4 hover:text-red-300">
-                About
-              </Link>
-              <Link href="/articles" className="p-4 hover:text-red-300">
-                Articles
-              </Link>
-              <Link href="/work" className="p-4 hover:text-red-300">
-                Work
-              </Link>
-              <Link href="/uses" className="p-4 hover:text-red-300">
-                Uses
-              </Link>
+              <NavbarLink slug="about">About</NavbarLink>
+              <NavbarLink slug="articles">Articles</NavbarLink>
+              <NavbarLink slug="work">Work</NavbarLink>
+              <NavbarLink slug="uses">Uses</NavbarLink>
             </ul>
           </nav>
         </header>
