@@ -6,16 +6,16 @@ import avatar from "../../public/avatar.jpg";
 
 export default function RootPage() {
   return (
-    <section className="relative flex min-w-fit flex-col items-center justify-around pb-4 lg:max-h-[768px]">
+    <section>
       <hgroup>
         <Link href="/">
-          <Image
-            src={avatar}
-            alt="Picture of Jason Liggayu."
-            width={100}
-            className="my-6 rounded-full"
+        <Image
+          src={avatar}
+          alt="Picture of Jason Liggayu."
+          width={100}
+          className="my-6 rounded-full"
           />
-        </Link>
+          </Link>
         <h1 className="whitespace-nowrap text-4xl font-bold tracking-tight lg:text-5xl 2xl:text-6xl">
           software engineer
           <br />

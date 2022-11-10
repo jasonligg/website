@@ -16,7 +16,7 @@ export default function RootLayout(props: Props) {
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className="flex h-screen flex-col justify-between bg-stone-900 text-stone-100">
+      <body className="flex min-h-screen flex-col justify-between bg-stone-900 text-stone-100">
         <header>
           <nav className="flex flex-row justify-center border-solid border-stone-50 pt-4">
             <ul className="flex flex-row space-x-6 rounded-full bg-stone-800 text-sm md:px-3">
@@ -35,7 +35,7 @@ export default function RootLayout(props: Props) {
             </ul>
           </nav>
         </header>
-        <main className="md:px-18 px-4 sm:px-6 lg:px-44 xl:px-96">
+        <main className="md:px-18 relative flex min-w-fit flex-col items-center justify-around px-4 pb-4 sm:px-6 lg:max-h-[768px] lg:px-44 xl:px-96">
           {children}
         </main>
         <footer className="mx-auto max-w-7xl flex-row justify-between border-t border-t-stone-500 py-4 md:flex lg:px-8">
