@@ -60,7 +60,6 @@ export default function RootPage() {
                 alt="Link to Jason's GitHub profile."
                 width={32}
                 height={32}
-                className="h-auto"
               />
             </a>
           </li>
