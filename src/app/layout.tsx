@@ -34,7 +34,7 @@ export default function RootLayout(props: Props) {
               <NavbarLink slug="about">About</NavbarLink>
               <NavbarLink slug="articles">Articles</NavbarLink>
               <NavbarLink slug="work">Work</NavbarLink>
-              <NavbarLink slug="uses">Uses</NavbarLink>
+              <NavbarLink slug="gratitude">Gratitude</NavbarLink>
             </ul>
           </nav>
         </header>
@@ -54,7 +54,8 @@ export default function RootLayout(props: Props) {
             </Link>
           </ul>
           <p className="p-4 text-xs text-stone-700">
-            © {new Date().getFullYear()} Jason Liggayu. All rights reserved.
+            © <time>{new Date().getFullYear()}</time> Jason Liggayu. All rights
+            reserved.
           </p>
         </footer>
       </body>

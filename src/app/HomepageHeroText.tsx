@@ -31,7 +31,7 @@ export default function HomepageHeroText() {
           return prevIndex + 1;
         });
         loop();
-      }, 5000);
+      }, 2500);
     }
     loop();
     return () => {
