@@ -32,8 +32,8 @@ export default function RootLayout(props: Props) {
             </Link>
             <ul className="hidden flex-row space-x-6 rounded-full bg-stone-800 text-sm md:visible md:flex md:px-3">
               <NavbarLink slug="about">About</NavbarLink>
-              <NavbarLink slug="articles">Articles</NavbarLink>
               <NavbarLink slug="work">Work</NavbarLink>
+              <NavbarLink slug="articles">Articles</NavbarLink>
               <NavbarLink slug="gratitude">Gratitude</NavbarLink>
             </ul>
           </nav>
