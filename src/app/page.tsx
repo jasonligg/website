@@ -4,7 +4,6 @@ import HomepageHeroText from "@/app/HomepageHeroText";
 import TwitterIcon from "../../public/twitter.png";
 import GithubIcon from "../../public/github.png";
 import LinkedInIcon from "../../public/linkedin.png";
-// import cat from "../../public/cat.jpg";
 
 export default function RootPage() {
   return (
@@ -76,11 +75,6 @@ export default function RootPage() {
           </li>
         </ul>
       </aside>
-      {/* <Image
-          src={cat}
-          alt="Picture of a grey cat wearing sunglasses."
-          className="md:pl-16 min-w-fit object-contain"
-        /> */}
     </section>
   );
 }
