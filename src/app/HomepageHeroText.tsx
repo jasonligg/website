@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 const titles = [
   "tech enthusiast",
-  "react fanatic",
+  "react fan",
   "next.js nerd",
   "typescript adept",
   "tailwind convert",
