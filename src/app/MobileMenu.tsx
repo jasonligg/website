@@ -27,7 +27,7 @@ export default function MobileMenu() {
             leaveTo="transform scale-95 opacity-0"
             className="absolute left-16 top-4 rounded-lg border border-stone-500 bg-stone-900/90"
           >
-            <Menu.Items className="flex flex-col ">
+            <Menu.Items className="flex flex-col">
               <Menu.Item>
                 <NavbarLink
                   slug="about"
