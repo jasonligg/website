@@ -48,8 +48,8 @@ export default function RootPage() {
               <Image
                 src={LinkedInIcon}
                 alt="Link to Jason's LinkedIn profile."
-                width={40}
-                height={40}
+                width={32}
+                height={32}
               />
             </a>
           </li>
