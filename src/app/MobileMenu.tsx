@@ -13,6 +13,7 @@ export default function MobileMenu() {
             {open && <MenuCrossIcon />}
           </Menu.Button>
           <div
+            aria-hidden={true}
             className={clsx(
               open ? "block" : "hidden",
               "fixed top-0 left-0 h-full w-full backdrop-blur-sm"
