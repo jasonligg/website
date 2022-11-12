@@ -22,7 +22,7 @@ export default function RootLayout(props: Props) {
       <body className="flex flex-col justify-between bg-stone-900 text-stone-100">
         <header className="pt-4">
           <nav className="flex flex-row justify-between border-solid border-stone-50 md:justify-center">
-            <MobileMenu />
+            {/* <MobileMenu /> */}
             <Link href="/" className="mr-6 w-[85px] md:w-[50px]">
               <Image
                 src={avatar}
