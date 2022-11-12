@@ -20,8 +20,7 @@ export default function RootLayout(props: Props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className="flex flex-col justify-between bg-stone-900 text-stone-100">
-         hello world.
-        {/* <header className="pt-4">
+        <header className="pt-4">
           <nav className="flex flex-row justify-between border-solid border-stone-50 md:justify-center">
             <MobileMenu />
             <Link href="/" className="mr-6 w-[85px] md:w-[50px]">
@@ -59,7 +58,7 @@ export default function RootLayout(props: Props) {
             © <time>2022</time> Jason Liggayu. All rights
             reserved.
           </p>
-        </footer> */}
+        </footer>
       </body>
     </html>
   );
