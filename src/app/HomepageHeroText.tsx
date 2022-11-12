@@ -43,7 +43,7 @@ export default function HomepageHeroText() {
   const title = titles[index];
 
   return (
-    <div key={title} className="motion-safe:animate-swipe-in">
+    <div key={title} className="relative -z-10 motion-safe:animate-swipe-in">
       {title}
       <br />
     </div>
