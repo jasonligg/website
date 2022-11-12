@@ -1,15 +1,70 @@
 "use client";
+import { Menu, Transition } from "@headlessui/react";
+import clsx from "clsx";
+import NavbarLink from "@/app/NavbarLink";
+
 export default function MobileMenu() {
   return (
-    <>
-      <button
-        aria-label="Toggle menu"
-        type="button"
-        className="md:hidden"
-      >
-        <MenuHamburgerIcon />
-      </button>
-    </>
+    <Menu>
+      {({ open }) => (
+        <>
+          <Menu.Button className="self-start py-6 md:hidden">
+            {!open && <MenuHamburgerIcon />}
+            {open && <MenuCrossIcon />}
+          </Menu.Button>
+          <div
+            className={clsx(
+              open ? "" : "hidden",
+              "fixed top-0 left-0 h-full w-full backdrop-blur-sm"
+            )}
+          />
+          <Transition
+            enter="transition duration-100 ease-out"
+            enterFrom="transform scale-95 opacity-0"
+            enterTo="transform scale-100 opacity-100"
+            leave="transition duration-75 ease-out"
+            leaveFrom="transform scale-100 opacity-100"
+            leaveTo="transform scale-95 opacity-0"
+            className="absolute left-16 top-4 rounded-lg border border-stone-500 bg-stone-900/90"
+          >
+            <Menu.Items className="flex flex-col ">
+              <Menu.Item>
+                <NavbarLink
+                  slug="about"
+                  className="ui-active:border ui-active:border-red-300"
+                >
+                  About
+                </NavbarLink>
+              </Menu.Item>
+              <Menu.Item>
+                <NavbarLink
+                  slug="work"
+                  className="ui-active:border ui-active:border-red-300"
+                >
+                  Work
+                </NavbarLink>
+              </Menu.Item>
+              <Menu.Item>
+                <NavbarLink
+                  slug="articles"
+                  className="ui-active:border ui-active:border-red-300"
+                >
+                  Articles
+                </NavbarLink>
+              </Menu.Item>
+              <Menu.Item>
+                <NavbarLink
+                  slug="gratitude"
+                  className="ui-active:border ui-active:border-red-300"
+                >
+                  Gratitude
+                </NavbarLink>
+              </Menu.Item>
+            </Menu.Items>
+          </Transition>
+        </>
+      )}
+    </Menu>
   );
 }
 
@@ -21,7 +76,7 @@ function MenuHamburgerIcon() {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="h-6 w-6 ml-3"
+      className="ml-6 h-6 w-6"
     >
       <path
         strokeLinecap="round"
@@ -40,7 +95,7 @@ function MenuCrossIcon() {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="h-6 w-6"
+      className="ml-6 h-6 w-6"
     >
       <path
         strokeLinecap="round"

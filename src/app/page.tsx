@@ -7,7 +7,7 @@ import LinkedInIcon from "../../public/linkedin.png";
 
 export default function RootPage() {
   return (
-    <section className="space-y-6">
+    <section>
       <hgroup>
         <h1 className="whitespace-nowrap text-4xl font-bold tracking-tight lg:text-5xl 2xl:text-6xl">
           software engineer
@@ -60,6 +60,7 @@ export default function RootPage() {
                 alt="Link to Jason's GitHub profile."
                 width={32}
                 height={32}
+                className="h-auto"
               />
             </a>
           </li>
