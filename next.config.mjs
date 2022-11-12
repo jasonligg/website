@@ -7,6 +7,7 @@
 
 /** @type {import("next").NextConfig} */
 const config = {
+  basePath: "",
   reactStrictMode: true,
   swcMinify: true,
   i18n: {
