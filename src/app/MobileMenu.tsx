@@ -14,7 +14,7 @@ export default function MobileMenu() {
           </Menu.Button>
           <div
             className={clsx(
-              open ? "" : "hidden",
+              open ? "block" : "hidden",
               "fixed top-0 left-0 h-full w-full backdrop-blur-sm"
             )}
           />
